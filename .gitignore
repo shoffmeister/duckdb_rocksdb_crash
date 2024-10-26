@@ -1,0 +1,8 @@
+target/
+.idea/
+
+rocksdb-jni-extracted/
+
+hs*.log
+ld-debug*
+*.jar

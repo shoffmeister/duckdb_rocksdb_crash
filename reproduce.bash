@@ -2,10 +2,10 @@
 
 set -euo pipefail
 
-rm ld-debug*.log.*
+rm ld-debug*.log.* || true
 
-ROCKSDB_VERSION=9.6.1
-# ROCKSDB_VERSION=9.8.0-SNAPSHOT
+ROCKSDB_VERSION=self-built-SNAPSHOT
+# ROCKSDB_VERSION=9.6.1
 
 mvn -Drocksdb.version=${ROCKSDB_VERSION} clean package
 
